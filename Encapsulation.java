@@ -2,7 +2,8 @@
 ***
 defination : Binding variables and methods in a block as like in a class and to it is used to achieve data intigrity and data privacy
              we can access the variables with the only binded methods......
-***
+***      
+  
 ----------------
 The Source code :-
 ----------------  
