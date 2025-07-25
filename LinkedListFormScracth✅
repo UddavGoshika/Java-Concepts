@@ -1,0 +1,92 @@
+
+class Main{
+
+// This is the class for the whole linked list & Methods can come from this class only 
+public static class Linkesls{
+     class Node{
+int data ;
+Node next;
+Node(int data)
+{
+this.data = data;
+this.next = null;
+}
+}
+    Node head = null;
+    void add(int data )
+    {
+        Node newnode = new Node(data);
+        if(head==null)
+        {
+            head = newnode;
+            return;
+        }
+        Node temp = head;
+        while(temp.next!=null)
+        {
+            temp = temp.next;
+        }
+            temp.next = newnode;
+
+    }
+    void display(){
+        Node temp = head;
+        while(temp.next != null)
+        {
+            System.out.println("==>"+temp.data);
+            temp = temp.next;
+        }
+        if(temp != null) {
+            System.out.println("==>" + temp.data);
+        }
+       
+
+
+    }
+    void remove(int data)
+    {
+        if(head == null)
+        {
+            return;
+        }
+        else if(head.data == data)
+        {
+            head = head.next;
+            return;
+        }
+        Node current = head;
+        while(current.next != null)
+        {
+            if(current.next.data == data)
+            {
+                current.next = current.next.next;
+                return;
+            }
+            current = current.next;
+        }
+    }
+
+}
+
+
+
+
+public static void main(String[] args) {
+    Linkesls ls = new Linkesls();
+    ls.add(25);
+    ls.add(35);
+    ls.add(45);
+    ls.add(55);
+    ls.add(65);
+    
+    ls.display();
+    ls.remove(45);
+    System.out.println("After removing 45:");
+    ls.display();
+
+
+
+}
+
+
+}
