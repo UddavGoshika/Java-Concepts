@@ -4,4 +4,45 @@ what is the class What is this , why to us learn ?
 
 ==> class is one of the key concept in Java OOPS concept 👍👍
 ==> Class is like think in this way, we are Classifying Object Into Groups You know that right !
-The best Example is in School " The Classes Are Used To 
+The best Example is in School " The Classes Are Used To classify the thier standard class wise to seperate 
+so java is object oriented programming language so to create object we must have some common qualities of the objects 
+
+cause the we can't create only one object we can create lot of objects in real time projects so in that time we have to control those common qualities 
+
+in this example :
+class (this is keyword we can write this word only to create class in java) car(this is anyword you should place but some rules to write the name like start with capital letters and , no spaces )
+{
+
+
+}
+so clearly 
+
+
+
+class Car{
+
+in this we can write common qualities that every car can have like every (must)cars has 4 wheels , one steering , one engine like common properties  
+String frontwheel = 'mrf';
+
+every car is driving fucntion right so this is also common feature 
+
+void drive(){
+System.out.println("driving started ......");
+}
+
+so we have a blueprint of car what are the basic fucntionalities and requirements then you start build the real you like car with extra features 
+
+}
+
+// creation of car with extra features in java is simple :
+
+Car Lambroghini = new Car();
+
+
+in this line we write first word car because you car also have same common feature which is to implement from car class/ blueprint
+lamborghini is the car or (object ) in you made in java
+new keyword should place that position only after = cause it is reason to create new car with that car common features 
+car() ; is the object creation in java memory ok 
+
+
+
